@@ -27,6 +27,9 @@ AddEventHandler("LRP-palancaCL",function()
     
      vehicle, distance = ESX.Game.GetClosestVehicle(coords)
  if DoesEntityExist(vehicle) and vehicle ~= nil and distance ~= nil and distance <= 2.8 then
+    
+    SetVehicleDoorsLocked(vehicle, 1)
+    Citizen.Wait(100)
     TriggerEvent("abrirmaletero:contadorporcentaje")
     Citizen.Wait(100)
     TriggerEvent("abrirmaletero:animacion")
