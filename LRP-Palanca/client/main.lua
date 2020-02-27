@@ -31,7 +31,8 @@ AddEventHandler("LRP-palancaCL",function()
     Citizen.Wait(100)
     TriggerEvent("abrirmaletero:animacion")
 else
-exports['mythic_notify']:DoCustomHudText('error', 'No hay un vehiculo cerca',3000)
+--exports['mythic_notify']:DoCustomHudText('error', 'No hay un vehiculo cerca',3000)
+ESX.ShowNotification('~r~No hay un vehiculo cerca')
 end
 
 end)
